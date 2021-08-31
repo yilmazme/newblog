@@ -1,0 +1,13 @@
+.navbar{
+ margin-top: 0px;
+ background-color: rgb(241, 42, 42);
+ margin-top: 0px;
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+}
+
+.h1{
+    color: #fff;
+    
+}

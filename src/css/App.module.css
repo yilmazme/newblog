@@ -6,3 +6,22 @@
     min-height: 100%;
     
 }
+
+
+.bioCardWraper{
+   position: absolute;
+   right: 3rem;
+   top:6rem;
+    width: fit-content;
+    margin-top: auto;
+   
+}
+
+.bioCard{
+width: 22rem;
+text-align: center;
+}
+.bioCard img{
+    border-radius: 3%;
+    width: fit-content;
+}

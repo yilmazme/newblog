@@ -33,8 +33,8 @@ export default function Projects() {
         <div className={style.projectContainer}>
            {proje && proje.map((el)=>{
                return(
-                <Slide top>
-                   <div key={uuid4()} className={style.oneProjectContainer}>
+                <Slide top key={uuid4()}>
+                   <div  className={style.oneProjectContainer}>
                        <img src={urlFor(el.mainImage).width(400).url()} alt="project_photo"/>
                       <div className={style.projectInfo}>
                       <h3>{el.title}</h3>

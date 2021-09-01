@@ -33,8 +33,8 @@ export default function AboutMe() {
       {author &&
         author.map((el) => {
           return (
-            <Fade left>
-            <div key={uuid4()} className={style.bioCard}>
+            <Fade left key={uuid4()}>
+            <div className={style.bioCard}>
               <img src={urlFor(el.image).width(200).url()} alt="sdsds" />
               <p style={{fontFamily:"cursive"}}>{el.name}</p>
               <p>{el.bio[0].children[0].text}</p>

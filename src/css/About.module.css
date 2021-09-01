@@ -20,3 +20,29 @@
      border-radius: 3%;
      width: fit-content;
  }
+
+ @media (max-width:805px) {
+
+    .bioCardWraper{
+        padding: 1rem;
+        position: absolute;
+        right: 0rem;
+        top:6rem;
+         width: 94%;
+         margin-top: auto;
+         border-top: 1px solid rgb(34, 186, 224);
+         border-left: 1px solid rgb(128, 0, 128);
+        
+     }
+     
+     .bioCard{
+     width: 94%;
+     text-align: center;
+     color: #fff;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     }
+     .bioCard img{
+         border-radius: 3%;
+         width: fit-content;
+     }
+ }

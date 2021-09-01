@@ -12,6 +12,7 @@ body {
   font-size: 14px;
  
   color: #fff;
+  overflow-y: hidden;
 }
 
 code {

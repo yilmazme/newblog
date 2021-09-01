@@ -1,3 +1,4 @@
+
 body {
   box-sizing: border-box;
   margin: 0;
@@ -9,8 +10,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 14px;
-  background: url("./photos/back.jpg") no-repeat center center ;
-  background-size: cover;
+ 
   color: #fff;
 }
 

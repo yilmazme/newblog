@@ -3,25 +3,100 @@
     margin-top: 0px !important;
     padding: 0px;
     width: 100%;
-    min-height: 100%;
-    
+    min-height: 100vh;
+    background: url("../photos/back.jpg") no-repeat center center ;
+    background-size: cover;
 }
 
+.intro1{
+    width: 50vw;
+    min-height: calc(100vh - 3rem);
+    position: absolute;
+    right: 0rem;
+    background-image: linear-gradient(to right, rgb(0, 3, 21, 0.3), rgba(201, 98, 241, 0.4) , rgba(80, 220, 245, 0.5));
+    opacity: 0.4;
+    animation: introAnimation 2000ms linear 1000ms forwards 1;
+}
+/* .intro2{
+    width: 50vw;
+    min-height: calc(100vh - 3rem);
+    position: absolute;
+    right: 0rem;
+    background-image: linear-gradient(to right, rgb(0, 3, 21, 0.3), rgba(201, 98, 241, 0.4) , rgba(80, 220, 245, 0.5));
+    opacity: 0.4;
+    animation: introAnimation 1000ms linear 2000ms forwards 1;
+}
+ .intro3{
+    width: 50vw;
+    min-height: calc(100vh - 3rem);
+    position: absolute;
+    right: 0rem;
+    background-image: linear-gradient(to right, rgb(0, 3, 21, 0.3), rgba(201, 98, 241, 0.4) , rgba(80, 220, 245, 0.5));
+    opacity: 0.4;
+    animation: introAnimation 1000ms linear 3000ms forwards 1;
+} */
+.intro4{
+    width: 50vw;
+    min-height: calc(100vh - 3rem);
+    position: absolute;
+    right: 0rem;
+    background-image: linear-gradient(to right, rgba(80, 220, 245, 0.3), rgba(201, 98, 241, 0.4) , rgba(5, 38, 44, 0.5));
+    opacity: 0;
+    animation: intro4Animation 200ms ease-in 4000ms forwards 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.introContent{
+    background-color: inherit;
+    width: 50%;
+    min-height: 50%;
+    border-left: 1px solid rgb(248, 250, 248);
+    padding-left: 1rem;
+}
+.introContent p{
+    line-height: 1.8;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+@keyframes introAnimation{
+  
+    0%{
+        right: 0;
+        opacity: 0.4;
+    }
+    100%{
+        right: 50vw;
+       opacity: 0.6;
+    }
+}
+@keyframes intro4Animation{
+  
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity:1;
+       
+    }
+}
 
-.bioCardWraper{
-   position: absolute;
-   right: 3rem;
-   top:6rem;
-    width: fit-content;
-    margin-top: auto;
+@media (max-width:805px) {
+
+.intro1{
+  display: none;
+}
+.intro4 {
+    width: 100vw;
+    min-height: calc(100vh - 3rem); 
+    animation: intro4Animation 200ms ease-in 1000ms forwards 1;
    
-}
-
-.bioCard{
-width: 22rem;
-text-align: center;
-}
-.bioCard img{
-    border-radius: 3%;
-    width: fit-content;
+}   
+.introContent{
+        background-color: inherit;
+        width: 90vw;
+        min-height: 50%; 
+        position: absolute;
+        top:2rem;
+    }
 }

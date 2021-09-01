@@ -1,6 +1,7 @@
 import React,{useEffect,useState} from 'react'
 import sanityClient from "../client";
 import { v4 as uuid4 } from "uuid";
+import { Link } from 'react-router-dom';
 
 export default function Posts() {
 
@@ -9,6 +10,7 @@ export default function Posts() {
 useEffect(()=>{
     sanityClient.fetch(`*[_type=="post"]{
         title,
+        slug,
         mainImage {
             asset->{
                 _id,
@@ -23,10 +25,12 @@ useEffect(()=>{
         <div>
            {posts && posts.map((val)=>{
                return(
-                   <div key={uuid4()}>
+                 <Link to={"/post/"+val.slug.current} key={uuid4()}>
+                   <div >
                        <img style={{width:"300px"}} src={val.mainImage.asset.url} alt="project"/>
                        <p>{val.title}</p>
                    </div>
+                 </Link>
                )
            })}
         </div>

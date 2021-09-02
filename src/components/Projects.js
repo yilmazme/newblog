@@ -2,15 +2,15 @@ import React,{useState,useEffect} from 'react'
 import sanityClient from "../client";
 import { v4 as uuid4 } from "uuid";
 import imageUrlBuilder from "@sanity/image-url";
-import style from "../css/Projects.module.css"
-import Slide from 'react-reveal/Slide';
+import style from "../css/Projects.module.css";
+import Fade from 'react-reveal/Fade';
 
 
 const builder = imageUrlBuilder(sanityClient);
 function urlFor(source) {
   return builder.image(source);
 }
-export default function Projects() {
+const Projects=()=>{
 
     const [proje, setProje] = useState(null);
 
@@ -33,7 +33,7 @@ export default function Projects() {
         <div className={style.projectContainer}>
            {proje && proje.map((el)=>{
                return(
-                <Slide top key={uuid4()}>
+                <Fade right key={uuid4()}>
                    <div  className={style.oneProjectContainer}>
                        <img src={urlFor(el.mainImage).width(400).url()} alt="project_photo"/>
                       <div className={style.projectInfo}>
@@ -43,9 +43,10 @@ export default function Projects() {
                        <a href={el.link} target="_blank" rel="noreferrer">Go to page</a>
                       </div>
                    </div>
-                   </Slide>
+                   </Fade>
                )
            })}
         </div>
     )
 }
+export default React.memo(Projects);

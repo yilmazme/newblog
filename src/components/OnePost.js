@@ -1,6 +1,14 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import sanityClient from "../client";
+import imageUrlBuilder from "@sanity/image-url";
+import BlockContent from "@sanity/block-content-to-react";
+import style from "../css/OnePost.module.css";
+
+const builder = imageUrlBuilder(sanityClient);
+function urlFor(source) {
+  return builder.image(source);
+}
 
 export default function OnePost() {
   const [singlePost, setSinglePost] = useState(null);
@@ -11,6 +19,7 @@ export default function OnePost() {
       .fetch(
         `*[slug.current == "${slug}"]{
             title,
+            _id,
             slug,
             mainImage {
             asset->{
@@ -18,6 +27,10 @@ export default function OnePost() {
                 url
                 },
             },
+            body,
+            "name": author->name,
+            "mahlas": author->slug,
+            "authorImage": author->image
         }`
       )
       .then((data) => setSinglePost(data[0]))
@@ -27,15 +40,36 @@ export default function OnePost() {
 
   console.log("onepost rendered");
   return (
-    <div>
+    <div className={style.postContainer}>
       {singlePost && (
-        <div>
-          <img
-            style={{ width: "300px" }}
-            src={singlePost.mainImage.asset.url}
-            alt="project"
+        <div className={style.onePostContainer}>
+           
+          <div className={style.postImg}>
+            <img
+              src={singlePost.mainImage.asset.url}
+              alt="project"
+            />
+          </div>
+          <div className={style.info}>
+          <h3> 📘 {singlePost.title}</h3>
+            <div className={style.authorInfo} >
+            <img
+              src={urlFor(singlePost.authorImage).width(70).url()}
+              alt="sdsds"
+            />
+             <p>{singlePost.mahlas.current} ✏️</p>
+            
+            </div>
+          </div>
+         
+          <div  className={style.content}>
+          <BlockContent
+         
+            blocks={singlePost.body}
+            projectId="t8moewut"
+            dataset="production"
           />
-          <p>{singlePost.title}</p>
+          </div>
         </div>
       )}
     </div>

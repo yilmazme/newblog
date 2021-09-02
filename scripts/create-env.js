@@ -1,0 +1,2 @@
+const fs = require('fs')
+fs.writeFileSync('./.env', `REACT_APP_API_KEY=${process.env.REACT_APP_API_KEY}\nREACT_APP_USER_ID=${process.env.REACT_APP_USER_ID}\nREACT_APP_TEMPLETE_ID=${process.env.REACT_APP_TEMPLETE_ID}\nREACT_APP_SERVICE_ID=${process.env.REACT_APP_SERVICE_ID}\n`)

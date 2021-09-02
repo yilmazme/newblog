@@ -10,7 +10,7 @@ function urlFor(source) {
   return builder.image(source);
 }
 
-export default function AboutMe() {
+const AboutMe=()=> {
   const [author, setAuthor] = useState(null);
 
   useEffect(() => {
@@ -33,8 +33,27 @@ export default function AboutMe() {
       {author &&
         author.map((el) => {
           return (
-            <Fade left key={uuid4()}>
-            <div className={style.bioCard}>
+            <Fade left key={uuid4()} className={style.mainFade}>
+              <div className={style.divUp}></div>
+              <div className={style.divLeft}></div>
+              <div className={style.introContent}>
+          <h2>Hello,</h2>
+          <p>
+            {" "}
+            and welcome! My name is Mehmet. I am a software developer, an old
+            physicist, and a literature enthusiast. I would not say I am an
+            expert in any of them. I just love them and the joy they give makes
+            me feel like I am (if previous sentences did not sound coherent you
+            are allowed to think that last auxiliary verb used in the sense of
+            Heideggerian Philosophy ). <br></br>I build this site with React and
+            Sanity.io. I am happy that it is scalable and robust because I am
+            going to share many things and add many features. If you are a
+            recruiter with a promising offer or a person who wants a website you
+            can mail me with just a click. If you are just an aimless visitor you should
+            know that I love you more and you can mail me too.😄
+          </p>
+        </div>
+              <div className={style.bioCard}>
               <img src={urlFor(el.image).width(200).url()} alt="sdsds" />
               <p style={{fontFamily:"cursive"}}>{el.name}</p>
               <p>{el.bio[0].children[0].text}</p>
@@ -49,3 +68,5 @@ export default function AboutMe() {
     </div>
   );
 }
+
+export default React.memo(AboutMe);

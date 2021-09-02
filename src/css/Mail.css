@@ -1,0 +1,160 @@
+.mailMain{
+  height: fit-content;
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  overflow: hidden;
+  z-index: 13;
+
+}
+
+.screen {
+  position: relative;
+  background: black;
+  border-radius: 15px;
+  border: solid 1px #333;
+  border-left: 1px solid rgb(219, 40, 219);
+border-top: 1px solid rgb(37, 238, 245);
+border-right: 1px solid rgb(219, 40, 219);
+border-bottom: 1px solid rgb(37, 238, 245);
+}
+
+.screen:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 20px;
+  right: 20px;
+  bottom: 0;
+  border-radius: 15px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, .4);
+  z-index: -1;
+}
+
+.screen-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background: black;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  
+  
+}
+
+.screen-header-right {
+  display: flex;
+  cursor: pointer;
+  border-radius: 10% !important;
+  opacity:1 !important;
+}
+.screen-header-right span:nth-child(3):hover {
+ background-color: #3e3e3e;
+}
+
+.screen-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.screen-body-item {
+  flex: 1;
+  padding: 50px;
+  
+}
+
+.app-form-group {
+  margin-bottom: 15px;
+}
+
+.app-form-group.message {
+  margin-top: 10px;
+}
+
+.app-form-group.buttons {
+  margin-bottom: 0;
+  text-align: right;
+}
+
+.app-form-control {
+  width: 100%;
+  padding: 10px 0;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #666;
+  color: #ddd;
+  font-size: 14px;
+  outline: none;
+  transition: border-color .2s;
+}
+
+.app-form-control::placeholder {
+  color: #666;
+}
+
+.app-form-control:focus {
+  border-bottom-color: #ddd;
+}
+
+.app-form-button {
+  background: none;
+  border: none;
+  color: #f83e88;
+  font-size: 14px;
+  cursor: pointer;
+  outline: none;
+}
+.buttons{
+    display: flex;
+    justify-content: space-between;
+}
+
+.app-form-button:hover {
+  color: #e1ebe3 !important;
+}
+
+textarea {
+  resize: none;
+  background-color: white;
+}
+
+@media screen and (max-width: 520px) {
+  .screen-body {
+    flex-direction: column;
+  }
+
+  .screen-body-item.left {
+    margin-bottom: 30px;
+  }
+
+  .app-title {
+    flex-direction: row;
+  }
+
+  .app-title span {
+    margin-right: 12px;
+  }
+
+  .app-title:after {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+ 
+  .mailMain{
+    height: fit-content;
+    position: relative;
+    width: 80vw;
+    right: unset;
+    top: 3rem;
+    margin: auto;
+    overflow: hidden;
+    z-index: 13;
+  
+  }
+}

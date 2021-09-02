@@ -1,10 +1,11 @@
 import React from "react";
 import style from "../css/Navbar.module.css";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { SocialIcon } from "react-social-icons";
 import Dropdown from "react-bootstrap/Dropdown";
 
-export default function Navbar() {
+export default function Navbar({openMail}) {
+
   return (
     <div className={style.navbar}>
       <NavLink activeStyle={{color:"rgb(187, 98, 223)"}} className={style.link} to="/" exact>
@@ -40,6 +41,7 @@ export default function Navbar() {
           style={{ width: "2rem", height: "2rem", marginLeft: "3px" }}
           url="https://github.com/yilmazme"
           target="_blank"
+          bgColor="#d3f5ce"
         />
         <SocialIcon
           style={{ width: "2rem", height: "2rem", marginLeft: "3px" }}
@@ -50,7 +52,10 @@ export default function Navbar() {
           style={{ width: "2rem", height: "2rem", marginLeft: "3px" }}
           url="https://www.instagram.com/yilmazmee/"
           target="_blank"
+          bgColor="rgb(112, 9, 112)"
+          fgColor="#fff"
         />
+       <span onClick={()=>openMail()} style={{fontSize:"22px", color:"rgb(250, 156, 49)", position:"relative", top:"7px", cursor:"pointer"}} className="m-2">Ask me: <i className="fas fa-envelope"></i></span>
       </div>
     </div>
   );

@@ -1,5 +1,4 @@
 {
-  "homepage":"https://yilmazme.github.io",
   "name": "client",
   "version": "0.1.0",
   "private": true,
@@ -29,9 +28,7 @@
     "start": "react-scripts start",
     "build": "node ./scripts/create-env.js && react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -b master -d build"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [

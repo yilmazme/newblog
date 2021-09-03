@@ -34,8 +34,10 @@ const AboutMe=()=> {
         author.map((el) => {
           return (
             <Fade left key={uuid4()} className={style.mainFade}>
-              <div className={style.divUp}></div>
-              <div className={style.divLeft}></div>
+              <div className={style.divOne}></div>
+              <div className={style.divTwo}></div>
+              <div className={style.divThree}></div>
+              <div className={style.divFour}></div>
               <div className={style.introContent}>
           <h2>Hello,</h2>
           <p>
@@ -50,7 +52,7 @@ const AboutMe=()=> {
             going to share many things and add many features. If you are a
             recruiter with a promising offer or a person who wants a website you
             can mail me with just a click. If you are just an aimless visitor you should
-            know that I love you more and you can mail me too.😄
+            know that I love you more and you can mail me too.🙂
           </p>
         </div>
               <div className={style.bioCard}>

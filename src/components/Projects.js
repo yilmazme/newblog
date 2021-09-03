@@ -16,7 +16,7 @@ const Projects=()=>{
 
     useEffect(() => {
         
-        sanityClient.fetch(`*[_type == "project"]{
+        sanityClient.fetch(`*[_type == "project"] | order(_createdAt asc){
             title,
             date,
             mainImage,

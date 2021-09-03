@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import style from "../css/Posts.module.css";
 import Fade from "react-reveal/Fade";
 
-export default function Posts() {
+const Posts=()=> {
   const [posts, setPosts] = useState(null);
 
   useEffect(() => {
@@ -40,7 +40,6 @@ export default function Posts() {
               <div className={style.onePostContainer}>
                 <div>
                   <img
-                    style={{ width: "300px" }}
                     src={val.mainImage.asset.url}
                     alt="project"
                   />
@@ -61,3 +60,5 @@ export default function Posts() {
     </div>
   );
 }
+
+export default React.memo(Posts);

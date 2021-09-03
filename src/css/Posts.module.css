@@ -77,4 +77,9 @@
         margin: auto;
         height: fit-content;
     }
+    .onePostContainer img{
+        width: 90vw;
+        height: 12rem;
+        border-radius: 3%;
+    }
 }

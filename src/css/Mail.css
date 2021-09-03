@@ -148,13 +148,14 @@ textarea {
  
   .mailMain{
     height: fit-content;
-    position: relative;
+    position: absolute;
     width: 80vw;
-    right: unset;
+    right: 10vw;
     top: 3rem;
     margin: auto;
     overflow: hidden;
     z-index: 13;
   
   }
+
 }

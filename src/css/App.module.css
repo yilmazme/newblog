@@ -10,6 +10,7 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+
 }
 
 .intro1{
@@ -20,17 +21,18 @@
     background-image: linear-gradient(to right, rgb(0, 3, 21, 0.3), rgba(201, 98, 241, 0.4) , rgba(80, 220, 245, 0.5));
     opacity: 0.4;
     animation: introAnimation 2000ms linear 1000ms forwards 1;
+    z-index: 2;
 }
 /* .intro2{
     width: 50vw;
     min-height: calc(100vh - 3rem);
     position: absolute;
     right: 0rem;
-    background-image: linear-gradient(to right, rgb(0, 3, 21, 0.3), rgba(201, 98, 241, 0.4) , rgba(80, 220, 245, 0.5));
-    opacity: 0.4;
-    animation: introAnimation 1000ms linear 2000ms forwards 1;
-}
- .intro3{
+    text-align: center;
+    z-index: 1;
+    color: #fff;
+} */
+ /* .intro3{
     width: 50vw;
     min-height: calc(100vh - 3rem);
     position: absolute;
@@ -38,7 +40,7 @@
     background-image: linear-gradient(to right, rgb(0, 3, 21, 0.3), rgba(201, 98, 241, 0.4) , rgba(80, 220, 245, 0.5));
     opacity: 0.4;
     animation: introAnimation 1000ms linear 3000ms forwards 1;
-} */
+}  */
 .intro4{
     width: 50vw;
     min-height: calc(100vh - 3rem);
@@ -51,6 +53,40 @@
     justify-content: center;
     align-items: center;
     color: #fff;
+    z-index: 2;
+}
+.intro4 p{
+    font-size: 18px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.p1{
+    color: #fff;
+    margin-top: 0.4rem;
+    opacity: 0;
+    animation: seep 1000ms ease-in 5000ms forwards;
+    transform: rotateZ(9deg);
+}
+.p2{
+    color: rgb(241, 160, 9);
+    margin-top: 1.3rem;
+    opacity: 0;
+    animation: seep 1000ms ease-in 6000ms forwards;
+}
+
+.p3{
+    color: #fff;
+    opacity: 0;
+    animation: seep 1000ms ease-in 7000ms forwards;
+    transform: rotateZ(-8deg);
+}
+@keyframes seep {
+    from{
+        opacity: 0;
+    }
+    to{
+opacity: 1;
+    }
 }
 
 @keyframes introAnimation{
@@ -85,6 +121,31 @@
     min-height: calc(100vh - 3rem); 
     animation: intro4Animation 200ms ease-in 1000ms forwards 1;
    
-}   
+} 
+.intro4 p{
+    font-size: 16px;
+}  
+.p1{
+    text-align: center;
+    color: #fff;
+    opacity: 0;
+    animation: seep 1000ms ease-in 1200ms forwards;
+    width: 33vw;
+}
+.p2{
+    text-align: center;
+
+    opacity: 0;
+    animation: seep 1000ms ease-in 2200ms forwards;
+    width: 33vw;
+}
+
+.p3{
+    text-align: center;
+    color: #fff;
+    opacity: 0;
+    animation: seep 1000ms ease-in 3200ms forwards;
+    width: 33vw;
+}
 
 }

@@ -9,8 +9,6 @@ function Mail({toggle,close}) {
   const [email, setEmail] = useState("");
 
 
-  console.log("mail rendered");
-
   const myText = useRef();
   const myName = useRef();
   const myMail = useRef();

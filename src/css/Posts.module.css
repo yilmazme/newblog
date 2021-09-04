@@ -31,6 +31,7 @@
     width: 22rem;
     height: 12rem;
     border-radius: 3%;
+   
 }
 .onePostContainer a{
     text-decoration: none;
@@ -44,7 +45,7 @@
 .postDescription{
     width: 60%;
     padding: 2rem;
-    border-left: 1px solid black;
+    font-size: 14px;
 }
 
 @media (max-width:805px) {

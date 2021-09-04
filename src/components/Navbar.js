@@ -55,7 +55,7 @@ export default function Navbar({openMail}) {
           bgColor="rgb(112, 9, 112)"
           fgColor="#fff"
         />
-       <span onClick={()=>openMail()} style={{fontSize:"22px", color:"rgb(250, 156, 49)", position:"relative", top:"7px", cursor:"pointer"}} className="m-2">Ask me: <i className="fas fa-envelope"></i></span>
+       <span onClick={()=>openMail()} style={{fontSize:"22px", color:"rgb(250, 156, 49)", position:"relative", top:"7px", cursor:"pointer"}} className="m-2">Ask me: <i className="fas fa-comment"></i></span>
       </div>
     </div>
   );

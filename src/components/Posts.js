@@ -38,7 +38,7 @@ const Posts=()=> {
           return (
             <Fade left key={uuid4()}>
               <div className={style.onePostContainer}>
-                <div>
+                <div style={{ borderRight: "1px solid black"}}>
                   <img
                     src={val.mainImage.asset.url}
                     alt="project"

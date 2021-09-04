@@ -10,7 +10,7 @@ function urlFor(source) {
   return builder.image(source);
 }
 
-const AboutMe=()=> {
+const AboutMe=({openMail})=> {
   const [author, setAuthor] = useState(null);
 
   useEffect(() => {
@@ -44,14 +44,15 @@ const AboutMe=()=> {
             {" "}
             and welcome! My name is Mehmet. I am a software developer, an old
             physicist, and a literature enthusiast. I would not say I am an
-            expert in any of them. I just love them and the joy they give makes
+            expert in any of them. Just love them and the joy they give makes
             me feel like I am (if previous sentences did not sound coherent you
             are allowed to think that last auxiliary verb used in the sense of
             Heideggerian Philosophy ). <br></br>I build this site with React and
             Sanity.io. I am happy that it is scalable and robust because I am
             going to share many things and add many features. If you are a
             recruiter with a promising offer or a person who wants a website you
-            can mail me with just a click. If you are just an aimless visitor you should
+            can mail me with just a <span onClick={openMail} style={{color:"rgb(250, 156, 49)", cursor:"pointer"}}>click</span>. 
+            If you are just an aimless visitor you should
             know that I love you more and you can mail me too.🙂
           </p>
         </div>
@@ -60,6 +61,7 @@ const AboutMe=()=> {
               <p style={{fontFamily:"cursive"}}>{el.name}</p>
               <p>{el.bio[0].children[0].text}</p>
               <p >
+                Ankara, Turkey <br></br>
                 Phone: +90 538 476 1082 <br></br>
                 E-mail: 10myilmaz@gmail.com
               </p>

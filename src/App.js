@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState,useCallback } from 'react'
 
 import Navbar from "./components/Navbar";
 import style from "./css/App.module.css";
@@ -16,9 +16,11 @@ function App() {
 
 const [openMail, setOpenMail] =  useState(false)
 
-function getFlagForMail(){
-setOpenMail(!openMail)
-}
+const getFlagForMail= useCallback(()=>{
+  setOpenMail(c=>!c)
+},[])
+
+
 function toggleClose(){
 setOpenMail(!openMail)
 }
@@ -31,7 +33,7 @@ setOpenMail(!openMail)
             <Home />
           </Route>
           <Route path="/about">
-            <AboutMe />
+            <AboutMe openMail={getFlagForMail} />
           </Route>
           <Route path="/projects">
             <Projects />

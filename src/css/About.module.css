@@ -56,9 +56,10 @@
      padding: 2px;
      left: 400px;
      color: #fff;
-    width: 100%;
+    width: 96%;
     min-height: 50%;
     border-top: 1px solid rgb(128, 0, 128);
+    font-size: 14px;
     
 }
 .introContent p{

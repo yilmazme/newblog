@@ -121,6 +121,14 @@ textarea {
   resize: none;
   background-color: white;
 }
+.screen-header-center{
+  cursor: pointer;
+  color:white
+}
+.screen-header-center h5:hover{
+  color: #d61d1d;
+
+}
 
 @media screen and (max-width: 520px) {
   .screen-body {

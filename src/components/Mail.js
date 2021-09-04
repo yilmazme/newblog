@@ -74,7 +74,7 @@ function Mail({toggle,close}) {
     <div className="screen">
       <div className="screen-header">
       <div className="screen-header-center">
-          <h5 className="text-white px-4">
+          <h5 className=" px-4" onClick={()=>close()}>
             Send Mail
           </h5>
         </div>

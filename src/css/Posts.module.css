@@ -74,8 +74,9 @@
         background-image: linear-gradient(to right, rgb(167, 138, 14), rgba(247, 235, 127) , rgba(241, 246, 247));
     }
     .postDescription{
-        width: 80vw;
-        margin: auto;
+        width: 94vw;
+        margin: 0;
+        padding: 0;
         height: fit-content;
     }
     .onePostContainer img{

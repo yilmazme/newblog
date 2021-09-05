@@ -45,9 +45,9 @@ const Posts=()=> {
                     alt="project"
                   />
                   <p style={{ marginTop: "1rem" }}> 📄 : {val.title}</p>
-                  <p style={{ marginTop: "1rem" }}> ✏️ : {val.categories[0].title}</p>
+                  <p style={{ marginTop: "1rem" }}> 🔎 : {val.categories[0].title}</p>
                   <p> 📅 : {new Date(val.publishedAt).toLocaleDateString()}</p>
-                  <p> 🧑‍🤝‍🧑 : {val.author.name}</p>
+                  <p> ✏️ : {val.author.name}</p>
                 </div>
                 <div className={style.postDescription}>
                   {val.description}

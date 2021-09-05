@@ -31,9 +31,9 @@ export default function Navbar({openMail}) {
 
         <Dropdown.Menu>
           <Dropdown.Item href="/">Home</Dropdown.Item>
-          <Dropdown.Item href="projects">Projects</Dropdown.Item>
-          <Dropdown.Item href="post">Posts</Dropdown.Item>
-          <Dropdown.Item href="about">About me</Dropdown.Item>
+          <Dropdown.Item href="/projects">Projects</Dropdown.Item>
+          <Dropdown.Item href="/post">Posts</Dropdown.Item>
+          <Dropdown.Item href="/about">About me</Dropdown.Item>
         </Dropdown.Menu>
       </Dropdown>
       <div className={style.social}>

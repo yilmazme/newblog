@@ -1,4 +1,4 @@
-import React, { useRef,useState, useEffect } from "react";
+import React, { useRef,useState } from "react";
 import emailjs from "emailjs-com";
 import validator from "validator";
 import "../css/Mail.css";

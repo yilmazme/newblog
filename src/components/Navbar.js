@@ -16,8 +16,8 @@ export default function Navbar({openMail}) {
         Projects
       </NavLink>
 
-     <NavLink activeStyle={{color:"rgb(187, 98, 223)"}} className={style.link} to="/post">
-        Posts
+     <NavLink activeStyle={{color:"rgb(187, 98, 223)"}} className={style.link} to="/posts">
+       Blog Posts
       </NavLink>
 
      <NavLink activeStyle={{color:"rgb(187, 98, 223)"}} className={style.link} to="/about">
@@ -32,7 +32,7 @@ export default function Navbar({openMail}) {
         <Dropdown.Menu>
           <Dropdown.Item href="/">Home</Dropdown.Item>
           <Dropdown.Item href="/projects">Projects</Dropdown.Item>
-          <Dropdown.Item href="/post">Posts</Dropdown.Item>
+          <Dropdown.Item href="/posts">Blog Posts</Dropdown.Item>
           <Dropdown.Item href="/about">About me</Dropdown.Item>
         </Dropdown.Menu>
       </Dropdown>

@@ -38,7 +38,7 @@ setOpenMail(!openMail)
           <Route path="/projects">
             <Projects />
           </Route>
-          <Route path="/post" exact>
+          <Route path="/posts" exact>
             <Posts />
           </Route>
           <Route path="/post/:slug">

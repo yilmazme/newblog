@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import style from "../css/Posts.module.css";
 import Fade from "react-reveal/Fade";
 
-const Posts=()=> {
+const Posts=({prop})=> {
   const [posts, setPosts] = useState(null);
 
   useEffect(() => {

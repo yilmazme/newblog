@@ -1,18 +1,11 @@
-.mainFade{
-    background-color: #fff;
-    position: relative;
-}
 
 .bioCardWraper{
     position: absolute;
     right: 30%;
     top:10rem;
-     width: fit-content;
-     margin-top: auto;
-  
-     
     padding: 1rem;
  }
+
  .divOne{
      position: absolute;
      margin: 0;
@@ -85,14 +78,18 @@
  @media (max-width:805px) {
 
     .bioCardWraper{
-        padding: 1rem;
-        position: absolute;
+        display: flex;
+        flex-direction: column-reverse;
+        position: relative;
         right: 0rem;
-        top:6rem;
+        top:1rem;
          width: 94%;
+         margin: auto;
+         height: fit-content;
          margin-top: auto;
          border-top: 1px solid rgb(34, 186, 224);
          border-left: 1px solid rgb(128, 0, 128);
+        
         
      }
      
@@ -102,19 +99,18 @@
      color: #fff;
      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
      z-index: 3;
+     margin: auto;
      }
      .bioCard img{
          border-radius: 3%;
          width: fit-content;
      }
-
      .introContent{
-         display: none;
-     
-        
+        position: relative;
+        top: 1rem;
+        left: 0rem;
     }
      
- 
 
 
     .divOne{
@@ -127,10 +123,11 @@
       border-radius: 50%;
     }
     .divTwo{
-     
+
        position: absolute;
         margin: 0rem;
         left: 200px;
+        top: 400px;
         background-color: rgba(145, 24, 201, 0.616);
        width: 40px;
        height: 40px;

@@ -1,4 +1,4 @@
-import React, { useRef,useState } from "react";
+import React, { useRef,useState, useEffect } from "react";
 import emailjs from "emailjs-com";
 import validator from "validator";
 import "../css/Mail.css";
@@ -13,6 +13,7 @@ function Mail({toggle,close}) {
   const myName = useRef();
   const myMail = useRef();
   const myPhone = useRef();
+
 
   const validateEmail = (e) => {
     var validEmail = e.target.value;
@@ -99,6 +100,7 @@ function Mail({toggle,close}) {
                 required
                 autoComplete="false"
                 maxLength="500"
+                autoFocus={true}
               />
             </div>
             <div className="app-form-group">

@@ -1,159 +1,179 @@
+.bioCardWraper {
+  position: absolute;
+  right: 30%;
+  top: 10rem;
+  padding: 1rem;
+}
+.skills {
+  position: absolute;
+  top: 10rem;
+  left: 8%;
+  padding: 1rem;
+  width: 30%;
+  display: flex;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  height: 30vh;
+}
+.skills img {
+  height: 3rem;
+  width: 3rem;
+}
+.divOne {
+  position: absolute;
+  margin: 0;
+  top: -100px;
+  background-color: rgb(34, 211, 224);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.divTwo {
+  position: absolute;
+  margin: 0rem;
+  left: -100px;
+  background-color: rgba(145, 24, 201, 0.616);
+  width: 40px;
+  height: 40px;
+  z-index: 3;
+}
+.divThree {
+  position: absolute;
+  margin: 0rem;
+  left: 300px;
+  top: 100px;
+  background-color: rgb(34, 211, 224);
+  width: 40px;
+  height: 40px;
+}
+.divFour {
+  position: absolute;
+  margin: 0;
+  top: 100px;
+  background-color: rgba(145, 24, 201, 0.616);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  z-index: 3;
+}
+.introContent {
+  position: absolute;
+  margin: 0;
+  padding: 2px;
+  left: 400px;
+  color: #fff;
+  width: 96%;
+  min-height: 50%;
+  border-top: 1px solid rgb(128, 0, 128);
+  font-size: 14px;
+}
+.introContent p {
+  line-height: 1.8;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
 
-.bioCardWraper{
-    position: absolute;
-    right: 30%;
-    top:10rem;
-    padding: 1rem;
- }
+.bioCard {
+  width: 22rem;
+  text-align: center;
+  color: #fff;
+  font-family: "Arial Narrow", Arial, sans-serif;
+  border-right: 1px solid rgb(128, 0, 128);
+  border-top: 1px solid rgb(34, 186, 224);
+  padding: 1rem;
+  text-align: left;
+}
+.bioCard img {
+  border-radius: 1%;
+  width: fit-content;
+}
 
- .divOne{
-     position: absolute;
-     margin: 0;
-     top: -100px;
-     background-color: rgb(34, 211, 224);
-    width: 30px;
-    height: 30px;
-   border-radius: 50%;
- }
- .divTwo{
-    position: absolute;
-     margin: 0rem;
-     left: -100px;
-     background-color: rgba(145, 24, 201, 0.616);
-    width: 40px;
-    height: 40px;
+@media (max-width: 805px) {
+  .mainContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+  .skills {
+    position: relative;
+    top: 1rem;
+    left: unset;
+    padding-right: unset;
+    width: 94%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .bioCardWraper {
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+    top: 1rem;
+    right: 0rem;
+    width: 94%;
+    margin: auto;
+    height: fit-content;
+    margin-top: auto;
+    border-top: 1px solid rgb(34, 186, 224);
+    border-left: 1px solid rgb(128, 0, 128);
+  }
+
+  .bioCard {
+    width: 94%;
+    text-align: center;
+    color: #fff;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     z-index: 3;
- }
- .divThree{
+    margin: auto;
+  }
+  .bioCard img {
+    border-radius: 3%;
+    width: fit-content;
+  }
+  .introContent {
+    position: relative;
+    top: 1rem;
+    left: 0rem;
+    padding-bottom: 1rem;
+  }
+
+  .divOne {
     position: absolute;
-     margin: 0rem;
-     left: 300px;
-     top: 100px;
-     background-color: rgb(34, 211, 224);
-    width: 40px;
-    height: 40px;
- }
- .divFour{
-    position: absolute;
-     margin: 0;
-     top: 100px;
-     background-color: rgba(145, 24, 201, 0.616);
+    margin: 0;
+    top: 300px;
+    background-color: rgba(145, 24, 201, 0.616);
     width: 30px;
     height: 30px;
-   border-radius: 50%;
-   z-index: 3;
+    border-radius: 50%;
+  }
+  .divTwo {
+    position: absolute;
+    margin: 0rem;
+    left: 200px;
+    top: 400px;
+    background-color: rgba(145, 24, 201, 0.616);
+    width: 40px;
+    height: 40px;
+  }
+  .divThree {
+    position: absolute;
+    margin: 0rem;
+    left: 260px;
+    top: 200px;
+    background-color: rgb(34, 211, 224);
+    width: 40px;
+    height: 40px;
+    z-index: 4;
+  }
+  .divFour {
+    position: absolute;
+    margin: 0;
+    top: 100px;
+    left: 0px;
+    background-color: rgb(34, 211, 224);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
 }
- .introContent{
-     position: absolute;
-     margin: 0;
-     padding: 2px;
-     left: 400px;
-     color: #fff;
-    width: 96%;
-    min-height: 50%;
-    border-top: 1px solid rgb(128, 0, 128);
-    font-size: 14px;
-    
-}
-.introContent p{
-    line-height: 1.8;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
- 
- .bioCard{
- width: 22rem;
- text-align: center;
- color: #fff;
- font-family:  'Arial Narrow', Arial, sans-serif;
- border-right: 1px solid rgb(128, 0, 128);
- border-top: 1px solid rgb(34, 186, 224);
- padding: 1rem;
- text-align: left;
- }
- .bioCard img{
-     border-radius: 1%;
-     width: fit-content;
- }
-
- @media (max-width:805px) {
-
-    .bioCardWraper{
-        display: flex;
-        flex-direction: column-reverse;
-        position: relative;
-        right: 0rem;
-        top:1rem;
-         width: 94%;
-         margin: auto;
-         height: fit-content;
-         margin-top: auto;
-         border-top: 1px solid rgb(34, 186, 224);
-         border-left: 1px solid rgb(128, 0, 128);
-        
-        
-     }
-     
-     .bioCard{
-     width: 94%;
-     text-align: center;
-     color: #fff;
-     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-     z-index: 3;
-     margin: auto;
-     }
-     .bioCard img{
-         border-radius: 3%;
-         width: fit-content;
-     }
-     .introContent{
-        position: relative;
-        top: 1rem;
-        left: 0rem;
-        padding-bottom: 1rem;
-    }
-     
-
-
-    .divOne{
-        position: absolute;
-        margin: 0;
-        top: 300px;
-        background-color: rgba(145, 24, 201, 0.616);
-       width: 30px;
-       height: 30px;
-      border-radius: 50%;
-    }
-    .divTwo{
-
-       position: absolute;
-        margin: 0rem;
-        left: 200px;
-        top: 400px;
-        background-color: rgba(145, 24, 201, 0.616);
-       width: 40px;
-       height: 40px;
-    }
-    .divThree{
-       position: absolute;
-        margin: 0rem;
-        left: 260px;
-        top: 200px;
-        background-color: rgb(34, 211, 224);
-       width: 40px;
-       height: 40px;
-       z-index: 4;
-    }
-    .divFour{
-       position: absolute;
-        margin: 0;
-        top: 100px;
-        left: 0px;
-        background-color: rgb(34, 211, 224);
-       width: 30px;
-       height: 30px;
-      border-radius: 50%;
-   
-   }
-
-
- }

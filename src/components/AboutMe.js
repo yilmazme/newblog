@@ -45,21 +45,23 @@ const AboutMe = ({ openMail }) => {
   return (
     <div className="mainContainer">
       <div className={style.skills}>
-        <img src={js} alt="js" />
-        <img src={node} alt="node" />
-        <img src={css} alt="css" />
-        <img src={html} alt="html" />
-        <img src={react} alt="react" />
-        <img src={angular} alt="angular" />
-        <img src={python} alt="python" />
-        <img src={csharp} alt="csharp" />
-        <img src={sql} alt="sql" />
-        <img src={mongo} alt="mongo" />
+        <Fade right>
+          <img src={js} alt="js" />
+          <img src={node} alt="node" />
+          <img src={css} alt="css" />
+          <img src={html} alt="html" />
+          <img src={react} alt="react" />
+          <img src={angular} alt="angular" />
+          <img src={python} alt="python" />
+          <img src={csharp} alt="csharp" />
+          <img src={sql} alt="sql" />
+          <img src={mongo} alt="mongo" />
 
-        <img src={git} alt="git" />
-        <img src={github} alt="github" />
-        <img src={netlify} alt="netlify" />
-        <img src={heroku} alt="heroku" />
+          <img src={git} alt="git" />
+          <img src={github} alt="github" />
+          <img src={netlify} alt="netlify" />
+          <img src={heroku} alt="heroku" />
+        </Fade>
       </div>
 
       <div className={style.bioCardWraper}>

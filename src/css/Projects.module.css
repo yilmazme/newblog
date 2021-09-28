@@ -43,6 +43,10 @@
     margin-top:-5px;
 }
 
+.projectInfo p{
+    font-size:13px;
+}
+
 @media (max-width:805px) {
 
     .projectContainer{

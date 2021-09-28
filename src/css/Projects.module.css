@@ -37,6 +37,9 @@
     width: 90%;
     margin: auto;
     height: 12rem;
+    margin-top:3px;
+}
+.projectInfo a{
     margin-top:0;
 }
 

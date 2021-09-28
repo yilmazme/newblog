@@ -37,6 +37,7 @@
     width: 90%;
     margin: auto;
     height: 12rem;
+    margin-top:-1rem;
 }
 
 @media (max-width:805px) {

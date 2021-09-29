@@ -39,11 +39,13 @@ const Projects=()=>{
                       <div className={style.projectInfo}>
                       <h3>{el.title}</h3>
                        <p>{el.date.substring(0,10)}</p>
-                       <p>{el.description}</p>
-                       <a href={el.link} target="_blank" rel="noreferrer">Go to page</a>
+                       <p>{el.description}.<br></br>
+                       <a href={el.link} target="_blank" rel="noreferrer"> Go to page</a>
+                       </p>
+                       
                       </div>
                    </div>
-                   </Fade>
+                </Fade>
                )
            })}
         </div>

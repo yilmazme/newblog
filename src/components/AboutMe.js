@@ -85,17 +85,16 @@ const AboutMe = ({ openMail }) => {
                     auxiliary verb used in the sense of Heideggerian Philosophy
                     ). <br></br>I build this site with React and Sanity.io.
                     Happy that it is scalable and robust because I am going to
-                    share many things and add many features. <br></br>If you are
-                    a recruiter with a promising offer or a person who wants a
-                    website you can mail me with just a{" "}
+                    share many things and add many features. <br></br>
+                    If you want to ask something, you can send me an email with
+                    just a{" "}
                     <span
                       onClick={openMail}
                       style={{ color: "rgb(250, 156, 49)", cursor: "pointer" }}
                     >
                       click
-                    </span>
-                    . If you are just an aimless visitor you should know that I
-                    love you more and you can mail me too.🙂
+                    </span>{" "}
+                    .
                   </p>
                 </div>
                 <div className={style.bioCard}>

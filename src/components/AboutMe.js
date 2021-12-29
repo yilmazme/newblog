@@ -86,7 +86,8 @@ const AboutMe = ({ openMail }) => {
                     ). <br></br>I build this site with React and Sanity.io.
                     Happy that it is scalable and robust because I am going to
                     share many things and add many features. <br></br>
-                    If you want to ask something, you can send me an email with
+                    If you are a recruiter with a promising offer or a developer with questions 
+                    you can send me an email with
                     just a{" "}
                     <span
                       onClick={openMail}
@@ -94,7 +95,8 @@ const AboutMe = ({ openMail }) => {
                     >
                       click
                     </span>{" "}
-                    .
+                    . If you are an aimless visitor, you should know that 
+                    I love you more and you can mail me too &#128522;
                   </p>
                 </div>
                 <div className={style.bioCard}>

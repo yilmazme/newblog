@@ -39,21 +39,22 @@ const Posts=({prop})=> {
           return (
             <Fade left key={uuid4()}>
               <div className={style.onePostContainer}>
-                <div style={{ borderRight: "1px solid black"}}>
+                <div className={style.photoContainer}>
                   <img
                     src={val.mainImage.asset.url}
                     alt="project"
                   />
-                  <p style={{ marginTop: "1rem" }}> 📄 : {val.title}</p>
-                  <p style={{ marginTop: "1rem" }}> 🔎 : {val.categories[0].title}</p>
-                  <p> 📅 : {new Date(val.publishedAt).toLocaleDateString()}</p>
-                  <p> ✏️ : {val.author.name}</p>
+                 
                 </div>
                 <div className={style.postDescription}>
                   {val.description}
                   <br></br>
                   <br></br>
-                  👉 <Link to={"/post/" + val.slug.current}> Read </Link> 📚
+                  <p style={{ marginTop: "1rem" }}> 📄 : {val.title}</p>
+                  <p style={{ marginTop: "1rem" }}> 🔎 : {val.categories[0].title}</p>
+                  <p> 📅 : {new Date(val.publishedAt).toLocaleDateString()}</p>
+                  👉 <Link to={"/participated/" + val.slug.current}> Read More</Link>
+                  {/* <p> ✏️ : {val.author.name}</p> */}
                 </div>
               </div>
             </Fade>

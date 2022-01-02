@@ -27,10 +27,11 @@
     border-top: 1px solid rgb(253, 251, 251);
   
 }
-.onePostContainer img{
-    width: 100%;
-    height: 12rem;
-    border-radius: 3%;
+.photoContainer img{
+    width: 90%;
+    height: auto;
+    border-radius: 1%;
+    box-shadow: 2px 2px 2px;
    
 }
 .onePostContainer a{
@@ -41,9 +42,14 @@
     
     color: rgb(127, 6, 143);
 }
+.photoContainer{
+    width: 65%;
+    padding: 2rem;
+    font-size: 14px;
+}
 
 .postDescription{
-    width: 60%;
+    width: 35%;
     padding: 2rem;
     font-size: 14px;
 }
@@ -73,15 +79,22 @@
         border-bottom: 1px solid rgb(248, 252, 248);
         background-image: linear-gradient(to right, rgb(167, 138, 14), rgba(247, 235, 127) , rgba(241, 246, 247));
     }
+
+    .photoContainer{
+        width: 100%;
+        margin: auto;
+        padding: 1rem;
+        font-size: 14px;
+    }
     .postDescription{
-        width: 94vw;
-        margin: 0;
+        width: 100%;
+        margin: auto;
         padding: 0;
         height: fit-content;
     }
-    .onePostContainer img{
-        width: 90vw;
-        height: 12rem;
-        border-radius: 3%;
+    .photoContainer img{
+        width: 100%;
+        height: auto;
+        border-radius: 1%;
     }
 }

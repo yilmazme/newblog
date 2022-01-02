@@ -38,10 +38,10 @@ setOpenMail(!openMail)
           <Route path="/projects">
             <Projects />
           </Route>
-          <Route path="/posts" exact>
+          <Route path="/participated" exact>
             <Posts />
           </Route>
-          <Route path="/post/:slug">
+          <Route path="/participated/:slug">
             <OnePost />
           </Route>
           <Route path="*">

@@ -76,7 +76,7 @@ const AboutMe = ({ openMail }) => {
                 <div className={style.introContent}>
                   <h2>Hello,</h2>
                   <p>
-                    {" "}
+                    {"  "}
                     and welcome! My name is Mehmet. I am a software developer,
                     an old physicist, and a literature enthusiast. I would not
                     say I am an expert in any of them. Just love them and the
